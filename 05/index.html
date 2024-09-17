@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Mateusz Bogolubow">
     <title>devmentor.pl - JS Forms - #05</title>
 </head>
 <body>
-    <form action="" method="post">
+    <form action="" method="post" novalidate>
         <ul class="messages"></ul>
 
         <div>
@@ -29,7 +28,7 @@
                 Numer budunku <input name="houseNumber" type="number" required />
             </label>
             <label>
-                Numer mieszkania <input name="flatNumber" type="number" />
+                Numer mieszkania <input name="flatNumber" type="number" required/>
             </label>
         </div>
         <div>
@@ -67,9 +66,5 @@
         <div><input type="submit" /></div>
     </form>
     <script src="app.js"></script>
-
-    <footer>
-        <img src="../assets/img/logo-icon.png">
-    </footer>
 </body>
 </html>
